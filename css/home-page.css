@@ -1,0 +1,185 @@
+/* start the general rules */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+}
+
+
+:root{
+    --primary-color: #9EFF00;
+    --hover-bg:#262626;
+    --main-bg-color:#1A1A1A;
+    --section-border:1px solid #262626;
+}
+.container{
+    width: 83.125%;
+    margin: auto;
+    
+}
+body{
+    background-color:var(--main-bg-color);
+    font-family: 'Barlow', sans-serif;
+}
+/* end the general rules */
+/* start nav */
+nav{
+    border-bottom: var(--section-border);
+    width: 100%;
+}
+nav .container{
+
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+nav .logo p{
+    margin-left: 10px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    margin-right: 30px;
+
+}
+nav ul li a{
+    transition: all 1s;
+    text-transform: capitalize;
+    color: white;
+    font-size: 18px;
+    /* font-weight: 600; */
+}
+nav ul li a.active ,
+nav ul li a:hover{
+    border-radius: 5px;
+    padding: 14px 28px;
+    background-color: var(--hover-bg);
+}
+nav input{
+    border-radius: 8px;
+    padding: 16px 24px;
+    font-size: 18px;
+    text-transform: capitalize;
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+    transition: all 1s;
+}
+nav input:hover{
+    border: 1px solid var(--primary-color);
+    background-color: var(--main-bg-color);
+    color: var(--primary-color);
+}
+/* end nav */
+
+/* start header */
+header{
+    background-image: url(../images/Abstract\ Design.png);
+    background-size: 80% 65%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+header .container{
+    overflow: hidden;
+    background-image: url(../images/Hero\ Section.png) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+header .container .sub-container{
+    text-align: center;
+    margin-top: 112px;
+    display: flex;
+    justify-content: center;
+}
+header .container .sub-container h1{
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 68px;
+}
+header .container .sub-container p{
+    padding: 24px 40px;
+    text-transform: capitalize;
+    font-size: 22px;
+    background-color: var(--main-bg-color);
+    width: fit-content;
+    border: var(--section-border);
+    border-radius: 12px;
+    color: #98989A;
+}
+header .container .sub-container p span{
+    margin: 0 6px;
+    padding: 12px 14px ;
+    border-radius: 8px;
+    background-color: var(--hover-bg);
+    color: white;
+}
+header .container .sub-container .heading-btn{
+    margin-top: 74px;
+    margin-bottom: 274px;
+}
+header .container .sub-container .heading-btn input{
+    padding: 18px 28px  ;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+}
+header .container .sub-container .heading-btn input:first-child{
+    margin-right: 13px;
+    color: white;
+    background-color: var(--main-bg-color);
+    border: var(--section-border);
+}
+header .container .sub-container .heading-btn input:last-child{
+    background-color: var(--primary-color);
+}
+/* end header */
+/* start companies section */
+.companies .container .content{
+    padding: 40px 0;
+    position: relative;
+    display: flex;
+    column-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-bg-color);
+}
+.companies .container .content .item{
+    padding: 20px 40px;
+}
+.companies .container p{
+    padding: 20px 34px;
+    border-radius: 100px;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: var(--main-bg-color);
+    border: var(--section-border);
+    transform: translate(-50% , 85%);
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    color: white;
+    width: fit-content;
+}
+/* end companies section */
+
